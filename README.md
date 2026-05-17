@@ -1,16 +1,16 @@
 # Hashim-K Homebrew Tap
 
-Homebrew formulas for Hashim-K projects.
+Homebrew formulas for Hashim-K projects and release binaries.
 
-## UsageStat
+## Available Formulae
 
-Install:
+### UsageStat
 
 ```bash
 brew install hashim-k/tap/usagestat
 ```
 
-UsageStat release binaries are published from:
+Release binaries are published from:
 
 ```text
 https://github.com/Hashim-K/usagestat/releases
