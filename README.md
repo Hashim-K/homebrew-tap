@@ -6,6 +6,8 @@ Homebrew formulas for Hashim-K projects and release binaries.
 
 ### UsageStat
 
+Repository: [Hashim-K/usagestat](https://github.com/Hashim-K/usagestat)
+
 ```bash
 brew install hashim-k/tap/usagestat
 ```
