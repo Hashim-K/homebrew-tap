@@ -1,17 +1,17 @@
 class Usagestat < Formula
   desc "Scriptable CLI for local agent usage data"
   homepage "https://github.com/Hashim-K/usagestat"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
   depends_on :linux
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Hashim-K/usagestat/releases/download/v#{version}/usagestat-linux-aarch64.tar.gz"
-      sha256 "d0a16fbbda7e06d7c3347b3ac56ebbe285727343fe4f4b40c90df52bd198e75f"
+      sha256 "6c850a17c0aaf2c55b8faa44a4827f2fa63d98235970314e42fbfe2f915f2e06"
     else
       url "https://github.com/Hashim-K/usagestat/releases/download/v#{version}/usagestat-linux-x86_64.tar.gz"
-      sha256 "53a6c30fc482330b60b889aa5e53dbbdaecef5931f792bf9381ee875f0ba6950"
+      sha256 "c6999f50dabd03a595edae6d908a5f588b0e1feb6a69588656612cb0532e96e5"
     end
   end
 
