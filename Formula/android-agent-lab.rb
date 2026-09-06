@@ -1,17 +1,17 @@
 class AndroidAgentLab < Formula
   desc "Shared Android devices, scrcpy video, and visible agent cursors"
   homepage "https://github.com/Hashim-K/android-agent-lab"
-  version "0.2.0"
+  version "0.3.1"
   license "MIT"
   depends_on :linux
   depends_on "python@3.14"
 
   if Hardware::CPU.arm?
     url "https://github.com/Hashim-K/android-agent-lab/releases/download/v#{version}/Android-Agent-Lab-#{version}-arm64.tar.gz"
-    sha256 "dc57df5fb2c6bbf76baf0352471031d5c7f1f463e1165c2ecb488d48f259e96e"
+    sha256 "ad75aa95f685a420596a67b7f39775a73ec82e3ebe577312c8e2b70f594418b3"
   else
     url "https://github.com/Hashim-K/android-agent-lab/releases/download/v#{version}/Android-Agent-Lab-#{version}-x64.tar.gz"
-    sha256 "fd326e5337cf2f433cf9d6e80b9db03d850a669a1c82174309f32c73ffacb18d"
+    sha256 "13151507dee42a57470372ed4be5800637d621e80afcb8ca4a6ef689caaa5749"
   end
 
   def install
@@ -54,6 +54,7 @@ class AndroidAgentLab < Formula
     <<~EOS
       Requires a Linux desktop with GTK 3, NSS, GBM and ALSA libraries, plus adb.
       Install adb using your distro's android-tools/adb package or Android SDK.
+      For nearby discovery with distro adb, install and enable Avahi.
       Docker with Compose and /dev/kvm is optional for the x86_64 Android emulator.
 
       Launch with: android-agent-lab
