@@ -5,7 +5,9 @@ class UsagestatAlpha < Formula
   homepage "https://github.com/hashimkarim/usagestat"
   version "2.0.0-alpha.1"
   license "MIT"
-  conflicts_with "usagestat", because: "both install the usagestat commands"
+  on_linux do
+    conflicts_with "usagestat", because: "both install the usagestat commands"
+  end
 
   on_linux do
     if Hardware::CPU.arm?
