@@ -3,7 +3,7 @@
 class UsagestatAlpha < Formula
   desc "Scriptable CLI for local agent usage data"
   homepage "https://github.com/hashimkarim/usagestat"
-  version "2.0.0-alpha.1"
+  version "2.0.0-alpha.3"
   license "MIT"
   on_linux do
     conflicts_with "usagestat", because: "both install the usagestat commands"
@@ -11,22 +11,22 @@ class UsagestatAlpha < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.1/usagestat-linux-aarch64.tar.gz"
-      sha256 "b6f7cc9bd787453cf1e7f12d883d227490ba9cb5dc4713ffa0d4ba9725f73a04"
+      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.3/usagestat-linux-aarch64.tar.gz"
+      sha256 "f2eb9820b8ad95a0a843ebb4ef3104cfa35c6a5bd3d99eb75ad78a0fc1101d73"
     else
-      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.1/usagestat-linux-x86_64.tar.gz"
-      sha256 "f18b97f82d6448b79cb64f93ebfe1851daf0733bdfe3bc7f82563a899f7e5284"
+      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.3/usagestat-linux-x86_64.tar.gz"
+      sha256 "e53e36b9001caf5b0cdd4de3acb077dcddaa41a7f2acd91f5d81682ab3b98672"
     end
   end
 
   on_macos do
     depends_on macos: :big_sur
     if Hardware::CPU.arm?
-      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.1/usagestat-macos-aarch64.tar.gz"
-      sha256 "5c471ed6aae6073c5e801b671b7035a45238a88866490751a60cf6f7aef07e49"
+      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.3/usagestat-macos-aarch64.tar.gz"
+      sha256 "ad94df5267340ff56c20f2605151b68276093ca42639eca71db857591d55e07b"
     else
-      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.1/usagestat-macos-x86_64.tar.gz"
-      sha256 "8b5424939928ae0a65cf800a3315cea1141ef2f1b899d6cf82d7409bcd797cf7"
+      url "https://github.com/hashimkarim/usagestat/releases/download/v2.0.0-alpha.3/usagestat-macos-x86_64.tar.gz"
+      sha256 "f1690d1d0fc6f9cd784682128ff675ab4e943b21f5a892a33384eb6b194305f7"
     end
   end
 
